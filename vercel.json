@@ -1,31 +1,7 @@
 {
   "version": 2,
-  "routes": [
-    {
-      "src": "/education",
-      "dest": "/education"
-    },
-    {
-      "src": "/experience",
-      "dest": "/experience"
-    },
-    {
-      "src": "/projects",
-      "dest": "/projects"
-    },
-    {
-      "src": "/achievements",
-      "dest": "/achievements"
-    },
-    {
-      "src": "/thoughts",
-      "dest": "/thoughts"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ],
+  "cleanUrls": true,
+  "trailingSlash": false,
   "headers": [
     {
       "source": "/(.*)",
