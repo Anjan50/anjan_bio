@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useTheme } from '@/contexts/ThemeContext';
-import { FiSun, FiMoon, FiMenu, FiX } from 'react-icons/fi';
+import { FiGithub, FiMenu, FiX } from 'react-icons/fi';
 import { useState } from 'react';
 
 const Navigation = () => {
@@ -53,19 +53,17 @@ const Navigation = () => {
             ))}
           </div>
 
-          {/* Theme Toggle */}
+          {/* GitHub Source Code Link */}
           <div className="flex items-center space-x-4">
-            <button
-              onClick={toggleTheme}
+            <a
+              href="https://github.com/Anjan50/anjan_bio"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-2 rounded-lg hover:bg-foreground/10 transition-colors"
-              title={isTimeBased ? 'Time-based theme active' : 'Toggle theme'}
+              title="View Source Code"
             >
-              {theme === 'light' ? (
-                <FiSun className="w-5 h-5 text-black" />
-              ) : (
-                <FiMoon className="w-5 h-5 text-black" />
-              )}
-            </button>
+              <FiGithub className="w-5 h-5 text-black" />
+            </a>
 
             {/* Mobile menu button */}
             <button

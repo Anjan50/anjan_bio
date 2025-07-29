@@ -18,8 +18,24 @@
   * {
     @apply border-gray-200 dark:border-gray-700;
   }
+  
+  html {
+    background-image: 
+      radial-gradient(circle at 1px 1px, rgba(0, 0, 0, 0.05) 1px, transparent 0);
+    background-size: 20px 20px;
+    background-attachment: fixed;
+  }
+  
+  .dark html {
+    background-image: 
+      radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.05) 1px, transparent 0);
+    background-size: 20px 20px;
+    background-attachment: fixed;
+  }
+  
   body {
     @apply bg-background text-foreground transition-colors duration-300;
+    background: transparent;
   }
 }
 
