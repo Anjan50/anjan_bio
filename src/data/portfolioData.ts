@@ -221,6 +221,42 @@ export const portfolioData: PortfolioData = {
   projects: {
     "AI/ML": [
       {
+        name: "ResAI - AI-Powered Resume Builder",
+        slug: "resai-resume-builder",
+        thumbnail: "https://via.placeholder.com/400x300/1a1a1a/ffffff?text=ResAI",
+        summary: "Next.js-powered resume builder with multi-AI integration (Gemini, Claude, ChatGPT) for precision-crafted resumes that bridge opportunity gaps.",
+        description: [
+          "Developed a comprehensive AI-powered resume builder using Next.js with seamless integration of multiple AI APIs including Gemini, Claude, and ChatGPT for intelligent content generation and optimization.",
+          "Implemented smart parsing technology that extracts, organizes, and enhances resume information from any text input, transforming raw experience into compelling narratives that resonate with hiring managers.",
+          "Built ATS-optimized resume generation with keyword optimization to ensure maximum visibility through Applicant Tracking Systems, featuring precision-crafted templates and real-time AI suggestions."
+        ],
+        technologies: [
+          "Next.js",
+          "TypeScript",
+          "Gemini API",
+          "Claude API",
+          "ChatGPT API",
+          "AI Integration",
+          "ATS Optimization",
+          "Smart Parsing",
+          "Resume Templates",
+          "Real-time Processing"
+        ],
+        features: [
+          "Multi-AI integration for content generation",
+          "Smart parsing and information extraction",
+          "ATS-optimized keyword optimization",
+          "Precision-crafted resume templates"
+        ],
+        challenges: [
+          "Integrating multiple AI APIs seamlessly",
+          "Ensuring ATS compatibility and optimization",
+          "Creating intelligent content parsing algorithms"
+        ],
+        demoLink: "https://resai.sutralink.com/",
+        updatedAt: "2024-12-19T10:00:00.000Z"
+      },
+      {
         name: "Sutralink - AI Agent Platform",
         slug: "sutralink-ai-platform",
         thumbnail: "https://via.placeholder.com/400x300/1a1a1a/ffffff?text=Sutralink",
