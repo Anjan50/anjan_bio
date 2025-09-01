@@ -74,53 +74,90 @@ export const portfolioData: PortfolioData = {
   ],
   skills: {
     Languages: [
-      "JavaScript",
-      "TypeScript", 
-      "Python",
-      "C++",
       "Java",
+      "Python", 
+      "JavaScript",
+      "TypeScript",
+      "C++",
+      "Go",
       "SQL",
       "Bash",
       "HTML/CSS"
     ],
     "Frontend Development": [
-      "React.js",
+      "Spring Boot",
+      "Angular",
+      "React",
       "Node.js",
+      "Flask",
+      "Next.js",
+      "Tailwind CSS",
+      "PyTorch",
+      "Inngest",
+      "Stripe",
+      "Express.js",
       "D3.js",
       "GraphQL",
       "RESTful APIs",
       "Responsive Design"
     ],
     "Backend & Cloud": [
-      "AWS",
-      "Flask",
-      "Express.js",
-      "MongoDB",
+      "AWS (EC2, S3, Lambda, SageMaker, Auto-Scaling)",
+      "GCP (Vertex AI, Cloud Functions, Compute Engine)",
+      "Kubernetes",
+      "Docker",
+      "CI/CD",
+      "Git",
       "Distributed Systems",
       "Microservices",
-      "Containerization"
+      "Containerization",
+      "MongoDB",
+      "MySQL",
+      "PostgreSQL",
+      "GraphQL",
+      "VectorDB",
+      "Oracle",
+      "Redis",
+      "DynamoDB",
+      "Vector Databases (FAISS, Pinecone)"
     ],
     "Network & Infrastructure": [
-      "Kubernetes",
+      "Wireshark",
+      "tcpdump",
+      "iPerf3",
+      "Ansible",
+      "Bash",
+      "Socket Programming",
       "VXLAN",
       "Calico",
       "TCP/IP",
       "PCAP Analysis",
-      "tcpdump",
       "tshark",
-      "Wireshark",
-      "iPerf3",
       "ns-3 Network Simulator",
       "Network Simulation",
       "Congestion Control",
       "RPS/RFS",
-      "3GPP"
+      "3GPP",
+      "Google Analytics",
+      "SSL",
+      "REST",
+      "gRPC",
+      "BitTorrent Protocol",
+      "n8n (automation)"
     ],
     "Data & Analytics": [
+      "TensorFlow",
+      "Scikit-learn",
+      "LLMs (LangChain, LLaMA, Mistral, GPT-3, GPT-4)",
+      "Polar",
       "Machine Learning",
+      "Neural Networks",
+      "LLM Fine-Tuning",
+      "RAG (Retrieval-Augmented Generation)",
+      "Multi-Agent Systems",
+      "Generative AI",
       "Data Visualization",
       "Performance Analysis",
-      "Google Analytics",
       "Predictive Analytics",
       "Real-time Tracking",
       "Columnar Storage",
@@ -128,10 +165,6 @@ export const portfolioData: PortfolioData = {
       "Multiprocessing"
     ],
     "DevOps & Tools": [
-      "Git",
-      "Docker",
-      "Ansible",
-      "CI/CD",
       "Performance Benchmarking",
       "Automated Testing",
       "Fault Tolerance",
@@ -147,79 +180,146 @@ export const portfolioData: PortfolioData = {
   },
   experience: [
     {
-      company: "NC State University",
-      role: "Research Assistant",
-      duration: "Jan 2024 – Current",
-      location: "Raleigh",
+      company: "SVTronics, Inc.",
+      role: "Software Analyst",
+      duration: "Jun 2025 – Current",
+      location: "Dallas, TX",
       responsibilities: [
-        "In the laboratory of ideas, I forged a web of risk divination, merging Bloomberg's oracle with Python's wisdom, Django's structure, and AWS's boundless sky, to illuminate paths through financial tempests.",
-        "Wove AI prophecies into the fabric of analytics, harnessing Python and AWS to unveil hidden patterns and automate the dance of data, guided by n8n's silent orchestration.",
-        "Summoned scalable fortresses from AWS's elements—EC2, S3, RDS—while Python scripted the backend symphonies, bridging realms with Bloomberg's ancient knowledge."
+        "Developed automated Python scripts for PCB circuit validation, integrating real-time test results with internal ERP system; reduced manual testing time by 40% and improved overall hardware debugging accuracy.",
+        "Led end-to-end web and mobile development for a Smart Ring diagnostics platform using React, Node.js, and Firebase, enabling QA teams to remotely trigger test scripts and monitor live performance metrics via dashboards.",
+        "Created data pipelines using Python (Pandas, NumPy) to preprocess sensor data and push metrics into PowerBI dashboard.",
+        "Built automated test suites in Python to simulate edge-case circuit behavior, improving firmware QA reliability by 30%.",
+        "Collaborated on predictive failure modeling using regression analysis and trained supervised models using scikit-learn."
+      ]
+    },
+    {
+      company: "Orusha LLC",
+      role: "Software Developer Intern",
+      duration: "Jan 2025 – May 2025",
+      location: "Cary, NC",
+      responsibilities: [
+        "Gathered and clarified requirements for a healthcare patient portal; defined specs for COBRA plans, XML, JSON, flat files with special separators, and fixed-length layouts aligned to HIPAA X12.",
+        "Designed workflow tests and Python validators for X12 837/835; generated EDI claim files and guides; verified loops, segments, and code sets vs payer rules, logging each bug and trace in Jira.",
+        "Checked data integrity using Hadoop on GCP Dataproc; built Test and Traceability Matrices to detect gaps, reconcile patient IDs, and confirm HIPPA/HIPAA compliance across interfaces and data.",
+        "Scripted pytest/pydantic checks; shipped CI on GitHub Actions with Docker."
+      ]
+    },
+    {
+      company: "North Carolina State University",
+      role: "Software Engineer (RA)",
+      duration: "Jan 2024 – Nov 2024",
+      location: "Raleigh, NC",
+      responsibilities: [
+        "Built a risk-analysis web app for fintech loans at NCSU's financial markets lab; integrated Bloomberg API with Python, Django, PostgreSQL, and LangChain for LLM insights, deployed on AWS EC2 with Nginx.",
+        "Implemented PyTorch models on AWS SageMaker and GCP Vertex AI for credit risk and time-series; automated features with Pandas/Airflow, tracked runs in MLflow, and maintained model cards.",
+        "Provisioned infra on AWS S3, RDS, EKS; codified VPC/IAM with Terraform; added Prometheus/Grafana dashboards/alerts, plus OpenTelemetry traces across services and FastAPI jobs.",
+        "Automated workflows with n8n and REST; integrated MongoDB, Redis, and Kafka for event pipelines.",
+        "Set up CI/CD on GitHub Actions; containerized services with Docker/Helm for Kubernetes."
       ]
     },
     {
       company: "Azillik",
-      role: "Frontend Developer",
-      duration: "June 2023 – Dec 2023",
-      location: "Remote",
+      role: "Full Stack Developer",
+      duration: "Jun 2023 – Jun 2024",
+      location: "India",
       responsibilities: [
-        "Crafted responsive portals with React.js, elevating mobile communion by 40% and hastening revelations by 25%.",
-        "Manifested sublime UI elements and harmonious gradients, extending user sojourns by 30% in digital realms.",
-        "Collaborated with design sages to birth a unified aesthetic system, compressing creation cycles by 35%.",
-        "Refined frontend essences through division and lazy summoning, diminishing initial burdens by 45%."
+        "Led UI in Next.js with TypeScript and Tailwind CSS for a color psychology app; integrated REST APIs, built an accessible gradient picker, and codified a design system from Figma tokens in SB.",
+        "Implemented LLM personalization via LangChain with OpenAI/Azure OpenAI; stored preferences in MongoDB, added Redis caching, and enforced consent controls with CSP and OWASP.",
+        "Built npm UI component packages to an internal registry; added serverless endpoints on AWS Lambda/API Gateway, integrated Datadog, and delivered cost optimization with batching and caching.",
+        "Integrated Microsoft Clarity, Amplitude, and SEO meta for UX insights and discoverability.",
+        "Deployed on Vercel with CI/CD gates, Playwright e2e tests, and ESLint/Prettier."
       ]
     },
-    {
-      company: "Hexotix",
-      role: "Software Engineer",
-      duration: "April 2022 – July 2023",
-      location: "Remote",
-      responsibilities: [
-        "Guided Agile rituals—sprints, reflections, scrums—as a conductor of collective will.",
-        "Erected scalable link sanctuaries for 50,000 souls using Node.js and React microcosms, achieving near-eternal uptime via AWS's adaptive wisdom.",
-        "Harmonized cloud expenditures, reducing them by 20%, and forged CI/CD rivers that shortened deployments from epochs to moments with flawless precision."
-      ]
-    },
-    {
-      company: "Parul University",
-      role: "Teaching Assistant - DBMS Lab",
-      duration: "Nov 2021 – April 2022",
-      location: "Parul University, India",
-      responsibilities: [
-        "Illumined paths in C Programming and Database Mysteries for aspiring minds.",
-        "Resolved enigmas in practical realms, guiding seekers through experimental odysseys.",
-        "Evaluated quests and bestowed insights to elevate understanding.",
-        "Allied with elders to refine lab scriptures and enrich curricular tapestries.",
-        "Convened wisdom circles and crafted auxiliary artifacts to kindle learning flames."
-      ]
-    },
-    {
-      company: "AIESEC",
-      role: "Technical Lead - Leadership Development",
-      duration: "Sep 2022 – Jul 2023",
-      location: "Gujarat, India",
-      responsibilities: [
-        "Led eight digital artisans to fortify organizational auras, swelling online harmonies by 65%.",
-        "Deployed data-driven enchantments with analytic tools, amplifying campaign potencies by 50%.",
-        "Birthed automated chronicles, slashing manual labors by 70% and sharpening decisional blades.",
-        "Forged alliances with five tech titans, birthing sponsored convergences for youthful spirits."
-      ]
-    },
-    {
-      company: "Google Developer Student Clubs",
-      role: "Technical Campaign Manager",
-      duration: "Sep 2020 – Jul 2021",
-      location: "Parul University",
-      responsibilities: [
-        "Orchestrated technical symposia and coding rites, tripling fellowship and igniting tech passions.",
-        "Executed over ten campaigns touching a thousand souls, centered on emergent wonders.",
-        "Established mentorship bridges linking fifty seekers to industry sages, yielding fifteen apprenticeships.",
-        "Instated efficacy oracles for workshops, harvesting 90% affirmative echoes."
-      ]
-    }
-  ],
+          {
+        company: "Hexotix",
+        role: "Software Engineer",
+        duration: "Apr 2022 – Jan 2023",
+        location: "India",
+        responsibilities: [
+          "Developed a URL shortener with React, Node.js, Express; persisted in MongoDB, added analytics, QR, and ratelimiting; containerized with Docker and deployed via AWS CloudFormation.",
+          "Hardened security with ACM TLS via Route 53/CloudFront; malicious URL checks using VirusTotal API and heuristics; JWT auth, OWASP headers, and alerts via CloudWatch/SNS.",
+          "Integrated payments with Stripe and Pabbly via webhooks; built serverless workers on AWS Lambda, added SQS/SNS for async jobs, and shipped OpenAPI specs and Postman tests.",
+          "Shipped CI/CD with GitHub Actions, Dockerized builds, and IaC reviews."
+        ]
+      },
+      {
+        company: "Parul University",
+        role: "Teaching Assistant - DBMS Lab",
+        duration: "Nov 2021 – April 2022",
+        location: "Parul University, India",
+        responsibilities: [
+          "Illumined paths in C Programming and Database Mysteries for aspiring minds.",
+          "Resolved enigmas in practical realms, guiding seekers through experimental odysseys.",
+          "Evaluated quests and bestowed insights to elevate understanding.",
+          "Allied with elders to refine lab scriptures and enrich curricular tapestries.",
+          "Convened wisdom circles and crafted auxiliary artifacts to kindle learning flames."
+        ]
+      },
+      {
+        company: "AIESEC",
+        role: "Technical Lead - Leadership Development",
+        duration: "Sep 2022 – Jul 2023",
+        location: "Gujarat, India",
+        responsibilities: [
+          "Led eight digital artisans to fortify organizational auras, swelling online harmonies by 65%.",
+          "Deployed data-driven enchantments with analytic tools, amplifying campaign potencies by 50%.",
+          "Birthed automated chronicles, slashing manual labors by 70% and sharpening decisional blades.",
+          "Forged alliances with five tech titans, birthing sponsored convergences for youthful spirits."
+        ]
+      },
+      {
+        company: "Google Developer Student Clubs",
+        role: "Technical Campaign Manager",
+        duration: "Sep 2020 – Jul 2021",
+        location: "Parul University",
+        responsibilities: [
+          "Orchestrated technical symposia and coding rites, tripling fellowship and igniting tech passions.",
+          "Executed over ten campaigns touching a thousand souls, centered on emergent wonders.",
+          "Established mentorship bridges linking fifty seekers to industry sages, yielding fifteen apprenticeships.",
+          "Instated efficacy oracles for workshops, harvesting 90% affirmative echoes."
+        ]
+      }
+    ],
   projects: {
     "AI/ML": [
+      {
+        name: "AI Cover Letter Generator",
+        slug: "ai-cover-letter-generator",
+        thumbnail: "https://via.placeholder.com/400x300/1a1a1a/ffffff?text=Cover+Letter+AI",
+        summary: "AI-powered cover letter generator with multi-AI integration (ChatGPT, Gemini, Claude) for transforming resumes into professional cover letters using advanced RAG techniques.",
+        description: [
+          "Developed a comprehensive AI-powered cover letter generator using React.js and TypeScript with seamless integration of multiple AI APIs including ChatGPT, Gemini, and Claude for intelligent content generation and optimization.",
+          "Implemented advanced RAG (Retrieval-Augmented Generation) techniques to analyze resume data and job requirements, generating personalized and contextually relevant cover letters that resonate with hiring managers.",
+          "Built an intuitive Canvas-based interface for cover letter crafting with real-time AI suggestions, multiple AI provider options, and professional template generation for enhanced job application success."
+        ],
+        technologies: [
+          "React.js",
+          "TypeScript",
+          "Canvas API",
+          "ChatGPT API",
+          "Gemini API",
+          "Claude API",
+          "RAG (Retrieval-Augmented Generation)",
+          "AI Integration",
+          "Cover Letter Crafting",
+          "Professional Templates",
+          "Real-time Processing",
+          "Multi-AI Providers"
+        ],
+        features: [
+          "Multi-AI integration for content generation",
+          "Advanced RAG techniques for context analysis",
+          "Canvas-based cover letter crafting interface",
+          "Professional template generation"
+        ],
+        challenges: [
+          "Integrating multiple AI APIs seamlessly",
+          "Implementing effective RAG techniques",
+          "Creating intuitive Canvas-based editing experience"
+        ],
+        demoLink: "https://coverai.sutralink.com/",
+        updatedAt: "2024-12-19T10:00:00.000Z"
+      },
       {
         name: "ResAI - AI-Powered Resume Builder",
         slug: "resai-resume-builder",
@@ -361,41 +461,111 @@ export const portfolioData: PortfolioData = {
         ],
         updatedAt: "2024-12-19T10:00:00.000Z"
       },
-      {
-        name: "Psicota GPT",
-        slug: "psicota-gpt",
-        thumbnail: "https://blogger.googleusercontent.com/img/a/AVvXsEhsfbHSKkrSYH17tja1Qx5ooRPCd8hvYGA01F0npdFQioB8HRmZoVznbrSi7oOSODJjOP97aJESOhmLwXxOQxHenhNEY9e274ybA48-l-moTknYsdqcRx1xEsAVT3ppTPD3AmTmHfNPNSczUPy9MZQARC_DLNgH0r_wknU4Fqn0sEPN5G78TqnAOkjzt4_U=s16000",
-        summary: "AI-powered marketing analytics tool using machine learning and natural language processing for actionable insights.",
-        description: [
-          "Leveraged advanced ML algorithms and natural language processing to analyze marketing data and deliver actionable insights.",
-          "Integrated with various marketing platforms to streamline workflows and provide real-time recommendations.",
-          "Developed a user-friendly React interface for intuitive data visualization and marketing strategy optimization."
-        ],
-        technologies: [
-          "ReactJS",
-          "ChatGPT",
-          "Chrome Extension",
-          "Machine Learning",
-          "Natural Language Processing",
-          "Node.js",
-          "Express",
-          "MongoDB"
-        ],
-        features: [
-          "Automated marketing insights generation",
-          "Seamless platform integration",
-          "Real-time data processing",
-          "Intuitive visualization interface"
-        ],
-        challenges: [
-          "Handling large marketing datasets efficiently",
-          "Ensuring accurate AI predictions",
-          "Integrating multiple marketing APIs"
-        ],
-        demoLink: "https://psicota-gpt.vercel.app/",
-        sourceCode: "https://github.com/Anjan50/psicota-gpt",
-        updatedAt: "2024-04-23T06:36:34.437Z"
-      }
+             {
+         name: "Psicota GPT",
+         slug: "psicota-gpt",
+         thumbnail: "https://blogger.googleusercontent.com/img/a/AVvXsEhsfbHSKkrSYH17tja1Qx5ooRPCd8hvYGA01F0npdFQioB8HRmZoVznbrSi7oOSODJjOP97aJESOhmLwXxOQxHenhNEY9e274ybA48-l-moTknYsdqcRx1xEsAVT3ppTPD3AmTmHfNPNSczUPy9MZQARC_DLNgH0r_wknU4Fqn0sEPN5G78TqnAOkjzt4_U=s16000",
+         summary: "AI-powered marketing analytics tool using machine learning and natural language processing for actionable insights.",
+         description: [
+           "Leveraged advanced ML algorithms and natural language processing to analyze marketing data and deliver actionable insights.",
+           "Integrated with various marketing platforms to streamline workflows and provide real-time recommendations.",
+           "Developed a user-friendly React interface for intuitive data visualization and marketing strategy optimization."
+         ],
+         technologies: [
+           "ReactJS",
+           "ChatGPT",
+           "Chrome Extension",
+           "Machine Learning",
+           "Natural Language Processing",
+           "Node.js",
+           "Express",
+           "MongoDB"
+         ],
+         features: [
+           "Automated marketing insights generation",
+           "Seamless platform integration",
+           "Real-time data processing",
+           "Intuitive visualization interface"
+         ],
+         challenges: [
+           "Handling large marketing datasets efficiently",
+           "Ensuring accurate AI predictions",
+           "Integrating multiple marketing APIs"
+         ],
+         demoLink: "https://psicota-gpt.vercel.app/",
+         sourceCode: "https://github.com/Anjan50/psicota-gpt",
+         updatedAt: "2024-04-23T06:36:34.437Z"
+       },
+       {
+         name: "UltraX DEX Platform",
+         slug: "ultrax-dex-platform",
+         thumbnail: "https://via.placeholder.com/400x300/1a1a1a/ffffff?text=UltraX+DEX",
+         summary: "Advanced decentralized exchange platform with on-chain orderbook, AMM functionality, and multi-chain bridge capabilities for EVM-compatible networks.",
+         description: [
+           "Developed a comprehensive DEX platform featuring on-chain orderbook and AMM functionality for ERC-20 and BEP-20 tokens with UTX/ULP governance tokens.",
+           "Implemented cross-chain bridge functionality supporting Ethereum, BSC, Polygon, Arbitrum, Optimism, and wrapped Bitcoin with advanced staking and vesting mechanisms.",
+           "Built robust Solidity smart contracts using Hardhat framework with comprehensive security audits, upgrade paths, and role-based access control systems."
+         ],
+         technologies: [
+           "Solidity",
+           "EVM",
+           "React/Next.js",
+           "ethers.js",
+           "The Graph",
+           "AWS/GCP",
+           "Hardhat",
+           "Smart Contracts",
+           "Cross-chain Bridge",
+           "Orderbook DEX"
+         ],
+         features: [
+           "On-chain orderbook and AMM DEX",
+           "Multi-chain bridge functionality",
+           "Advanced staking and vesting",
+           "Governance token system"
+         ],
+         challenges: [
+           "Implementing secure cross-chain bridges",
+           "Optimizing gas costs for complex operations",
+           "Ensuring smart contract security"
+         ],
+         updatedAt: "2024-12-19T10:00:00.000Z"
+       },
+       {
+         name: "Smart Contract Risk Identifier Extension",
+         slug: "smart-contract-risk-identifier",
+         thumbnail: "https://via.placeholder.com/400x300/1a1a1a/ffffff?text=Risk+Identifier",
+         summary: "Chrome extension that performs real-time security analysis of Ethereum smart contracts, identifying vulnerabilities and providing comprehensive risk assessment reports.",
+         description: [
+           "Developed a Chrome extension that analyzes Ethereum smart contracts in real-time, utilizing advanced static code analysis techniques to identify security vulnerabilities and potential risks.",
+           "Integrated multiple blockchain APIs and Solidity analysis tools to provide comprehensive risk scores, detailed audit reports, and actionable security recommendations for developers and users.",
+           "Implemented real-time scanning capabilities that work seamlessly with popular blockchain explorers and DEX platforms, enabling users to make informed decisions about smart contract interactions."
+         ],
+         technologies: [
+           "Smart Contract Analysis",
+           "Solidity",
+           "Static Code Analysis",
+           "Blockchain APIs",
+           "Chrome Extension",
+           "JavaScript",
+           "Security Analysis",
+           "Risk Assessment",
+           "Ethereum",
+           "Vulnerability Detection"
+         ],
+         features: [
+           "Real-time smart contract analysis",
+           "Comprehensive vulnerability detection",
+           "Risk scoring and assessment",
+           "Detailed security audit reports"
+         ],
+         challenges: [
+           "Implementing accurate static analysis algorithms",
+           "Integrating multiple blockchain data sources",
+           "Ensuring real-time performance for complex analysis"
+         ],
+         updatedAt: "2024-12-19T10:00:00.000Z"
+       }
     ],
     Software: [
       {
@@ -678,9 +848,79 @@ export const portfolioData: PortfolioData = {
           "Optimizing performance under high traffic",
           "Implementing robust security measures"
         ],
-        sourceCode: "https://github.com/Anjan50/url-shortener-link-enhancement-app",
-        updatedAt: "2024-04-23T06:36:34.437Z"
-      }
+                 sourceCode: "https://github.com/Anjan50/url-shortener-link-enhancement-app",
+         updatedAt: "2024-04-23T06:36:34.437Z"
+       },
+       {
+         name: "Go Feature Flag Service",
+         slug: "go-feature-flag-service",
+         thumbnail: "https://via.placeholder.com/400x300/1a1a1a/ffffff?text=Go+Feature+Flags",
+         summary: "High-performance feature flag service built with Go, featuring gRPC/REST APIs, real-time propagation, and comprehensive monitoring capabilities.",
+         description: [
+           "Developed a robust Go-based feature flag service with dual gRPC and REST API support, PostgreSQL persistence, and Redis caching for high-performance flag resolution.",
+           "Implemented real-time flag propagation using Kafka and WebSockets, enabling instant feature rollouts across distributed systems with comprehensive RBAC and audit logging.",
+           "Built production-ready deployment with Docker containerization, Kubernetes orchestration, and integrated monitoring via OpenTelemetry and Prometheus for observability."
+         ],
+         technologies: [
+           "Go",
+           "gRPC",
+           "REST APIs",
+           "PostgreSQL",
+           "Redis",
+           "Kafka",
+           "Docker",
+           "Kubernetes",
+           "AWS/GCP",
+           "OpenTelemetry",
+           "Prometheus",
+           "RBAC"
+         ],
+         features: [
+           "Dual gRPC and REST APIs",
+           "Real-time flag propagation",
+           "Comprehensive RBAC system",
+           "Production monitoring stack"
+         ],
+         challenges: [
+           "Ensuring flag consistency across services",
+           "Optimizing real-time propagation performance",
+           "Implementing robust audit and idempotency"
+         ],
+         updatedAt: "2024-12-19T10:00:00.000Z"
+       },
+       {
+         name: "PU Schedule Helper Chrome Extension",
+         slug: "pu-schedule-helper-extension",
+         thumbnail: "https://via.placeholder.com/400x300/1a1a1a/ffffff?text=PU+Schedule+Helper",
+         summary: "Chrome extension that enhances university course registration by integrating professor ratings and course evaluations directly into the web interface.",
+         description: [
+           "Developed a Chrome extension used by 200+ students to enhance course registration experience by injecting professor ratings and color-coded course information directly into the university's HTML DOM.",
+           "Implemented web scraping functionality using Beautiful Soup and Xpdf to gather data from Rate My Professors and university course evaluation systems, providing real-time insights during registration.",
+           "Built collaborative feedback system allowing students to suggest features and improvements, creating a community-driven tool that continuously evolves based on user needs."
+         ],
+         technologies: [
+           "JavaScript",
+           "HTML/CSS",
+           "Chrome Extension",
+           "Flask (Python)",
+           "Beautiful Soup",
+           "Web Scraping",
+           "DOM Manipulation",
+           "API Integration"
+         ],
+         features: [
+           "Real-time professor ratings integration",
+           "Color-coded course information display",
+           "Web scraping from multiple sources",
+           "Community feedback system"
+         ],
+         challenges: [
+           "Maintaining compatibility with website updates",
+           "Handling dynamic content loading",
+           "Ensuring ethical web scraping practices"
+         ],
+         updatedAt: "2024-12-19T10:00:00.000Z"
+       }
     ],
     Network: [
       {
@@ -1092,10 +1332,45 @@ export const portfolioData: PortfolioData = {
           "Integrating blockchain functionalities",
           "Optimizing for speed and reliability"
         ],
-        demoLink: "https://polygon-global-smart-card.vercel.app/",
-        sourceCode: "https://github.com/Anjan50/polygon-e-card",
-        updatedAt: "2024-04-23T06:36:34.437Z"
-      }
+                 demoLink: "https://polygon-global-smart-card.vercel.app/",
+         sourceCode: "https://github.com/Anjan50/polygon-e-card",
+         updatedAt: "2024-04-23T06:36:34.437Z"
+       },
+       {
+         name: "Universal Medical Datacare Blockchain System",
+         slug: "universal-medical-datacare-blockchain",
+         thumbnail: "https://via.placeholder.com/400x300/1a1a1a/ffffff?text=Medical+Blockchain",
+         summary: "Decentralized Electronic Health Record (EHR) system built on Ethereum blockchain for secure, patient-controlled medical data sharing across healthcare providers.",
+         description: [
+           "Developed a comprehensive blockchain-based EHR system using Ethereum smart contracts to enable secure, decentralized medical data sharing while maintaining patient privacy and data integrity.",
+           "Implemented cryptographic data integrity mechanisms and permissioned sharing protocols that allow patients to control access to their medical records across multiple healthcare providers.",
+           "Built a robust permission system using smart contracts that ensures only authorized healthcare professionals can access specific patient data, with full audit trails and compliance features."
+         ],
+         technologies: [
+           "Ethereum",
+           "Solidity",
+           "Blockchain",
+           "Smart Contracts",
+           "Electronic Health Records",
+           "Cryptographic Security",
+           "Patient Data Management",
+           "Healthcare Integration",
+           "Permission Systems",
+           "Audit Trails"
+         ],
+         features: [
+           "Patient-controlled data access",
+           "Cryptographic data integrity",
+           "Permissioned sharing protocols",
+           "Comprehensive audit trails"
+         ],
+         challenges: [
+           "Ensuring HIPAA compliance on blockchain",
+           "Managing complex permission systems",
+           "Integrating with existing healthcare infrastructure"
+         ],
+         updatedAt: "2024-12-19T10:00:00.000Z"
+       }
     ]
   },
   achievements: [

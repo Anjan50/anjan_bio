@@ -67,7 +67,7 @@ export default function Home() {
                 always focused on delivering user-centric solutions that drive business value.
               </p>
               <Link
-              href="/education"
+              href="/thoughts"
               className="inline-flex items-center space-x-2 text-sm text-foreground/70 hover:text-foreground transition-colors"
             ><span><u>What I Think?</u></span>
               <FiArrowRight className="w-4 h-4 text-black" /></Link>

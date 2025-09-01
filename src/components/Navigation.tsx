@@ -55,7 +55,7 @@ const Navigation = () => {
 
           {/* GitHub Source Code Link */}
           <div className="flex items-center space-x-4">
-            <a
+            {/* <a
               href="https://github.com/Anjan50/anjan_bio"
               target="_blank"
               rel="noopener noreferrer"
@@ -63,7 +63,7 @@ const Navigation = () => {
               title="View Source Code"
             >
               <FiGithub className="w-5 h-5 text-black" />
-            </a>
+            </a> */}
 
             {/* Mobile menu button */}
             <button
